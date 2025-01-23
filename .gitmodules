@@ -1,0 +1,3 @@
+[submodule "dist/imageenhancer"]
+    path = imageenhancer
+    url = https://github.com/rv9451/imageenhancer
