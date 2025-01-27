@@ -1,42 +1,78 @@
-<div class="bg-gray-50 py-12">
-    <div class="container mx-auto px-6 lg:px-20">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <!-- Image Section -->
-        <div>
-          <img
-            src="/assets/me.jpg"
-            alt="About Us"
-            class="rounded-lg shadow-lg"
-          />
-        </div>
-  
-        <!-- Text Section -->
-        <div>
-          <h2 class="text-3xl font-bold text-gray-800 mb-6">
-            About Us
-          </h2>
-          <p class="text-gray-600 leading-relaxed mb-6">
-            Welcome to our platform! We are passionate about providing high-quality services that meet your needs. Our team is dedicated to innovation, excellence, and building meaningful relationships with our clients.
-          </p>
-          <p class="text-gray-600 leading-relaxed">
-            With years of experience in the industry, we strive to exceed expectations and deliver results that make a difference. Join us on this journey and experience what we have to offer.
-          </p>
-  
-          <!-- Call-to-Action -->
-          <div class="mt-6">
-            <a
-              href="/assets/images/Raghvendra-Mishra-1year.pdf"
-              class="inline-block bg-blue-600 text-white px-6  rounded-xl shadow-md hover:bg-blue-700 transition"
-              target="_blank"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-1">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-              </svg>
-               Resume
-            </a>
+<div class="bg-[#f1edff] py-12">
+  <div class="container mx-auto">
+    <div class="row flex justify-between items-center">
+      <!-- Left Column -->
+      <div class="w-1/2 px-4">
+        <h1 class="text-4xl font-semibold my-4">
+          Hello There I'm
+          <span class="text-purple-600 font-bold">
+            {{ displayedText }}
+          </span>
+        </h1>
+        <h1 class="font-semibold py-10">Hi, I'm a Full Stack Developer with over 1 year of hands-on experience. I
+          specialize in a variety of technologies including PHP, CodeIgniter 4, Magento 2, HTML5, CSS3, JavaScript, and
+          Bootstrap 5. Passionate about building efficient and scalable web solutions, I am always eager to learn and
+          implement new technologies to improve the user experience. Based in Lucknow, I strive to deliver high-quality
+          results and make an impact with every project.</h1>
+        <button type="button"
+          class="flex focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"><svg
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg> &nbsp; <a href="/assets/images/Raghvendra-Mishra-1year.pdf" target="_blank">Resume</a></button>
+      </div>
+
+      <!-- Right Column -->
+      <div class="w-1/2 px-4 flex justify-center items-center">
+        <img src="assets/me-removebg-preview.png" alt="raghvendra" class="max-w-full h-auto" />
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-sm-12">
+        <h1 class="text-6xl font-bold transition duration-300 ease-in-out hover:text-sky-700 py-7">
+          Skil<u >ls</u>
+        </h1>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 relative">
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/magento.png" alt="Magento" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">Magento</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/ci.png" alt="CodeIgniter" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">CodeIgniter</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/ang.png" alt="Angular" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">Angular</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/jquery.png" alt="JQuery" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">Jquery</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/html.png" alt="HTML" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">HTML</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/css.png" alt="CSS" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">CSS</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/boot.png" alt="CSS" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">Bootstrap</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/js.png" alt="CSS" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">JavaScript</p>
+          </div>
+          <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:bg-sky-100 dark:hover:bg-sky-900 transform hover:scale-105 transition duration-300 ease-in-out">
+            <img src="/assets/images/tailwind.png" alt="CSS" class="w-full h-24 object-contain mb-4">
+            <p class="text-center text-lg font-semibold">Tailwind</p>
           </div>
         </div>
+;        
       </div>
     </div>
   </div>
-  
+</div>
